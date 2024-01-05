@@ -70,6 +70,7 @@ struct LoginView: View {
                 Spacer()
             }
         }
+        .navigationBarHidden(true)
     }
 }
 

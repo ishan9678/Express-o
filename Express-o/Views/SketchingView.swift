@@ -119,6 +119,7 @@ struct SketchingView: View {
             BottomNavBarView()
         }
         .edgesIgnoringSafeArea(.bottom)
+        .navigationBarHidden(true)
     }
 }
 

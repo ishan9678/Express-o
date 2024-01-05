@@ -33,15 +33,27 @@ struct BottomNavBarView: View {
             case "home":
                 print("Icon tapped")
                 return AnyView(HomeView())
+            case "art_therapy":
+                return AnyView(ArtTherapyView())
+                
+            case "journal":
+                let examplePosts = ArtJournalPost.examplePosts
+                return AnyView(ArtJournalView(posts: examplePosts))
+                
+            case "nova":
+                return AnyView(NovaConnectingView())
                 
             case "profile":
-                return AnyView(ProfileView())
-          
+                let examplePins = Pins.examplePins
+                let exampleCreations = ArtJournalPost.examplePosts
+                return AnyView(ProfileView(posts: examplePins, creations: exampleCreations))
+            
             default:
                 return AnyView(HomeView())
             }
         }
     }
+    
 
 
 

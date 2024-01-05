@@ -12,32 +12,45 @@ struct PostGridView: View {
         .init(.flexible())
     ]
 
+    @Binding var postSelection: Post?
+
+    init(postSelection: Binding<Post?>) {
+        self._postSelection = postSelection
+    }
+
     var body: some View {
         ScrollView {
             HStack(alignment: .top) {
                 LazyVGrid(columns: homeGridItems) {
                     ForEach(Array(Post.examplePosts.enumerated()), id: \.1.id) { index, post in
                         if index % 2 != 0 {
-                            PostGridCell(post: post)
+                            NavigationLink(destination: PostDetailView(post: post)) {
+                                PostGridCell(post: post)
+                                    .onTapGesture {
+                                        print("efef")
+                                        postSelection = post
+                                    }
+                            }
                         }
                     }
-                }
-                .onPreferenceChange(ViewHeightKey.self) { newHeight in
-                    // Handle height change if needed
                 }
 
                 LazyVGrid(columns: homeGridItems) {
                     ForEach(Array(Post.examplePosts.enumerated()), id: \.1.id) { index, post in
                         if index % 2 == 0 {
-                            PostGridCell(post: post)
+                            NavigationLink(destination: PostDetailView(post: post)) {
+                                PostGridCell(post: post)
+                                    .onTapGesture {
+                                        postSelection = post
+                                    }
+                            }
                         }
                     }
                 }
-                .onPreferenceChange(ViewHeightKey.self) { newHeight in
-                    // Handle height change if needed
-                }
             }
-
+        }
+        .onTapGesture {
+            UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
         }
     }
 }

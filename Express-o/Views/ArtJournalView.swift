@@ -9,33 +9,39 @@ import SwiftUI
 
 struct ArtJournalView: View {
     let posts: [ArtJournalPost]
-
+    
     init(posts: [ArtJournalPost]) {
         self.posts = posts
     }
-
+    
     var body: some View {
-        VStack() {
-            // Header
-            HeaderView(title: "Art Journal", subTitle: "", alignLeft: true, height: 230,subMessage: true, subMessageWidth: 233 ,subMessageText: "Your Creations")
-                .frame(maxWidth: .infinity, maxHeight: 130, alignment: .topLeading)
-                .background(Color.white)
-                .padding(.bottom,40)
-
-            // ArtJournal Entries
-            
-            LazyVGrid(columns: Array(repeating: GridItem(), count: 2), spacing: 40) {
-                ForEach(posts) { post in
-                    ArtJournalPostView(post: post)
+        NavigationView{
+            VStack() {
+                // Header
+                HeaderView(title: "Art Journal", subTitle: "", alignLeft: true, height: 230,subMessage: true, subMessageWidth: 233 ,subMessageText: "Your Creations")
+                    .frame(maxWidth: .infinity, maxHeight: 130, alignment: .topLeading)
+                    .background(Color.white)
+                    .padding(.bottom,40)
+                
+                // ArtJournal Entries
+                ScrollView{
+                    
+                    LazyVGrid(columns: Array(repeating: GridItem(), count: 2), spacing: 40) {
+                        ForEach(posts) { post in
+                            ArtJournalPostView(post: post)
+                        }
+                    }
+                    .padding(15)
+                    
                 }
+                
+                Spacer()
+                
+                BottomNavBarView()
             }
-            .padding(15)
-            
-            Spacer()
-            
-            BottomNavBarView()
+            .edgesIgnoringSafeArea(.bottom)
         }
-        .edgesIgnoringSafeArea(.bottom)
+        .navigationBarHidden(true)
     }
 }
 

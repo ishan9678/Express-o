@@ -8,13 +8,17 @@
 import SwiftUI
 
 struct HomeView: View {
+    
+    @State private var isPostDetailViewPresented = false
+    @State private var selectedPost: Post?
+    
     var body: some View {
         
         NavigationView {
             
             VStack(spacing: 0) {
                 // Header
-                HeaderView(title: "Hey, Oliver", subTitle: "", alignLeft: true, height: 170, subMessage: false, subMessageWidth: 0 ,subMessageText: "")
+                HeaderView(title: "Hey, Oliver", subTitle: "", alignLeft: true, height: 170, subMessage: false, subMessageWidth: 0, subMessageText: "")
                     .frame(maxWidth: .infinity, maxHeight: 80, alignment: .topLeading)
                     .background(Color.white)
                 
@@ -25,8 +29,12 @@ struct HomeView: View {
                     .padding(.bottom, 10)
 
                 // Posts
-                PostGridView()
+                PostGridView(postSelection: $selectedPost)
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    .onTapGesture {
+                        isPostDetailViewPresented.toggle()
+                        print("onnn")
+                    }
                 
                 // Bottom navbar
                 NavigationLink(destination: HomeView()) {
@@ -37,7 +45,13 @@ struct HomeView: View {
                 }
             }
             .edgesIgnoringSafeArea(.bottom)
+            .sheet(isPresented: $isPostDetailViewPresented) {
+                if let post = selectedPost {
+                    PostDetailView(post: post)
+                }
+            }
         }
+        .navigationBarHidden(true)
     }
 }
 
