@@ -16,7 +16,7 @@ struct RegisterView: View {
         
         VStack{
             //Header
-            HeaderView(title: "Express-o", subTitle: "Get started", alignLeft: false, height: 210, subMessage: false, subMessageWidth: 0 ,subMessageText: "" )
+            HeaderView(title: "Express-o", titleSize: 35, subTitle: "Get started", alignLeft: false, height: 210, subMessage: false, subMessageWidth: 0 ,subMessageText: "" )
                 .offset(y:-35);
             
             //Image

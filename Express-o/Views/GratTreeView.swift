@@ -12,7 +12,7 @@ struct GratTreeView: View {
     var body: some View {
         VStack{
             //Header
-            HeaderView(title: "My Gratitude Tree", subTitle: "", alignLeft: true, height: 245, subMessage: true,subMessageWidth: 315, subMessageText: "What are you grateful for?")
+            HeaderView(title: "My Gratitude Tree", titleSize: 35, subTitle: "", alignLeft: true, height: 245, subMessage: true,subMessageWidth: 315, subMessageText: "What are you grateful for?")
                 .frame(maxWidth: .infinity, maxHeight: 130, alignment: .topLeading)
                 .background(Color.white)
 

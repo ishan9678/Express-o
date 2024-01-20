@@ -6,11 +6,18 @@
 //
 
 import SwiftUI
+import FirebaseAuth
+import FirebaseFirestore
+
+
 
 struct HomeView: View {
-    
     @State private var isPostDetailViewPresented = false
     @State private var selectedPost: Post?
+    
+    @State private var userName = ""
+
+    
     
     var body: some View {
         
@@ -18,7 +25,7 @@ struct HomeView: View {
             
             VStack(spacing: 0) {
                 // Header
-                HeaderView(title: "Hey, Oliver", subTitle: "", alignLeft: true, height: 170, subMessage: false, subMessageWidth: 0, subMessageText: "")
+                HeaderView(title: "Hey, Oliver", titleSize: 35, subTitle: "", alignLeft: true, height: 170, subMessage: false, subMessageWidth: 0, subMessageText: "")
                     .frame(maxWidth: .infinity, maxHeight: 80, alignment: .topLeading)
                     .background(Color.white)
                 
@@ -37,12 +44,11 @@ struct HomeView: View {
                     }
                 
                 // Bottom navbar
-                NavigationLink(destination: HomeView()) {
-                    BottomNavBarView()
+               BottomNavBarView()
                         .navigationBarTitle("", displayMode: .inline)
                         .navigationBarHidden(true)
                         .toolbar(.hidden)
-                }
+                
             }
             .edgesIgnoringSafeArea(.bottom)
             .sheet(isPresented: $isPostDetailViewPresented) {
@@ -50,10 +56,13 @@ struct HomeView: View {
                     PostDetailView(post: post)
                 }
             }
+           
         }
         .navigationBarHidden(true)
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
+
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {

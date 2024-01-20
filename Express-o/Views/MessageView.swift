@@ -14,7 +14,7 @@ struct MessageView: View {
     var body: some View {
         VStack {
             // Header
-            HeaderView(title: "Nova", subTitle: "", alignLeft: true, height: 230, subMessage: true, subMessageWidth: 133, subMessageText: "          Your Art Pal")
+            HeaderView(title: "Nova",titleSize: 35 , subTitle: "", alignLeft: true, height: 230, subMessage: true, subMessageWidth: 133, subMessageText: "          Your Art Pal")
                 .frame(maxWidth: .infinity, maxHeight: 130, alignment: .topLeading)
                 
             

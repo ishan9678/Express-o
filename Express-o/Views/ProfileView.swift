@@ -1,5 +1,7 @@
 import SwiftUI
 import FirebaseAuth
+import FirebaseFirestore
+
 
 struct ProfileView: View {
     @State private var selectedTab: Tab = .pins
@@ -153,6 +155,7 @@ struct ProfileView: View {
             .edgesIgnoringSafeArea(.all)
         }
         .navigationBarHidden(true)
+        .navigationViewStyle(StackNavigationViewStyle())
 
     }
 }

@@ -20,7 +20,7 @@ struct SketchingView: View {
     var body: some View {
         VStack {
             // Header
-            HeaderView(title: "Sketching", subTitle: "", alignLeft: true, height: 245, subMessage: true,subMessageWidth: 233, subMessageText: "Sketch Name...")
+            HeaderView(title: "Sketching", titleSize: 35, subTitle: "", alignLeft: true, height: 245, subMessage: true,subMessageWidth: 233, subMessageText: "Sketch Name...")
                 .frame(maxWidth: .infinity, maxHeight: 130, alignment: .topLeading)
                 .background(Color.white)
                 .padding(.bottom, 40)
@@ -30,6 +30,8 @@ struct SketchingView: View {
                 for drawing in drawings {
                     context.stroke(drawing.path, with: .color(drawing.color), lineWidth: CGFloat(drawing.size))
                 }
+                
+                
 
                 context.stroke(currentDrawing.path, with: .color(currentDrawing.color), lineWidth: CGFloat(currentDrawing.size))
             }
@@ -122,6 +124,8 @@ struct SketchingView: View {
         .navigationBarHidden(true)
     }
 }
+
+
 
 struct Drawing {
     var color: Color

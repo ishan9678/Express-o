@@ -69,6 +69,8 @@ struct NovaConnectingView: View {
             .navigationBarHidden(true) // Hide the navigation bar for this view
         }
         .navigationBarHidden(true)
+        .navigationViewStyle(StackNavigationViewStyle())
+
     }
 }
 

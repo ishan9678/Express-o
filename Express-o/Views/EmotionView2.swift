@@ -15,7 +15,7 @@ struct EmotionView2: View {
         NavigationView {
             VStack {
                 // Header
-                HeaderView(title: "Emotion-Color Wheel", subTitle: "", alignLeft: false, height: 200, subMessage: false, subMessageWidth: 233, subMessageText: "What are you feeling?   ")
+                HeaderView(title: "Emotion-Color Wheel", titleSize: 35, subTitle: "", alignLeft: false, height: 200, subMessage: false, subMessageWidth: 233, subMessageText: "What are you feeling?   ")
                     .frame(maxWidth: .infinity, maxHeight: 130, alignment: .topLeading)
                     .background(Color.white)
 
@@ -58,10 +58,10 @@ struct EmotionView2: View {
 
                 BottomNavBarView()
             }
-            .navigationBarHidden(true)
             .edgesIgnoringSafeArea(.bottom)
         }
         .navigationBarHidden(true)
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 

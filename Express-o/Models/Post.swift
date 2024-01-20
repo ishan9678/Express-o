@@ -22,6 +22,7 @@ extension Post {
             Post(id: UUID(), imageName: "post4", title: "Sketching Adventure", description: "Exploring the world through sketches."),
             Post(id: UUID(), imageName: "post5", title: "Sketching Adventure", description: "Exploring the world through sketches."),
             Post(id: UUID(), imageName: "post6", title: "Sketching Adventure", description: "Exploring the world through sketches."),
+        
 
         ]
     }
