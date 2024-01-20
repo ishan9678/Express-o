@@ -6,51 +6,43 @@
 //
 
 import SwiftUI
+import PencilKit
 
 struct MandalaView: View {
-    @State private var color = Color.orange
-    
+    @State private var drawing = PKDrawing()
+
+
     var body: some View {
-        NavigationView{
-            VStack{
-                //Header
-                HeaderView(title: "Mandala Art", subTitle: "", alignLeft: true, height: 245, subMessage: true,subMessageWidth: 233, subMessageText: "Mandala Name...")
+        NavigationView {
+            VStack {
+                // Header
+                HeaderView(title: "Mandala Art", titleSize: 35, subTitle: "", alignLeft: true, height: 245, subMessage: true, subMessageWidth: 233, subMessageText: "Mandala Name...")
                     .frame(maxWidth: .infinity, maxHeight: 130, alignment: .topLeading)
                     .background(Color.white)
-                
-                
+
                 Spacer()
                 // Mandala
+               
                 Image("Mandala_Art")
+                  
                 
-                HStack{
-                    ColorPicker("", selection: $color)
-                    
-                    Image(systemName: "pencil")
-                        .font(.system(size: 40))
-                        .padding(.leading,10)
-                    Image(systemName: "eraser")
-                        .font(.system(size: 40))
-                    Button("Clear") {
-                        
-                    }
-                    .font(.system(size: 30))
-                    .foregroundColor(.black)
-                }
-                .padding(.trailing,65)
-                .background(Color(hex: "FEC7C0"))
-                .edgesIgnoringSafeArea(.bottom)
-                
-                
+
                 BottomNavBarView()
             }
-            .edgesIgnoringSafeArea(.bottom)
-            .navigationBarHidden(true)
+            .edgesIgnoringSafeArea(.bottom)            
         }
         .navigationBarHidden(true)
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 
-#Preview {
-    MandalaView()
+
+
+
+#if DEBUG
+struct MandalaView_Previews: PreviewProvider {
+    static var previews: some View {
+        MandalaView()
+    }
 }
+#endif

@@ -9,6 +9,7 @@ import SwiftUI
 
 struct HeaderView: View {
     let title: String
+    let titleSize: CGFloat
     let subTitle: String
     let alignLeft: Bool
     let height: CGFloat
@@ -23,7 +24,7 @@ struct HeaderView: View {
 
             VStack(alignment: alignLeft ? .leading : .center) {
                 Text(title)
-                    .font(.system(size: 35))
+                    .font(.system(size: titleSize))
                     .foregroundColor(Color(hex: "17335F"))
                     .bold()
                     .padding(.top, 20)
@@ -67,6 +68,6 @@ struct HeaderView: View {
 
 struct HeaderView_Previews: PreviewProvider {
     static var previews: some View {
-        HeaderView(title: "Title", subTitle: "Sub Title", alignLeft: false, height: 210, subMessage: true, subMessageWidth: 233,subMessageText: "Your Creations"/*, subMessage: true, subMessageWidth: 233, subMessageText: "Sub Message"*/)
+        HeaderView(title: "Title", titleSize: 35, subTitle: "Sub Title", alignLeft: false, height: 210, subMessage: true, subMessageWidth: 233,subMessageText: "Your Creations"/*, subMessage: true, subMessageWidth: 233, subMessageText: "Sub Message"*/)
     }
 }

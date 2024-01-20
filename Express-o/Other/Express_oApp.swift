@@ -14,7 +14,9 @@ struct Express_oApp: App {
     }
     var body: some Scene {
         WindowGroup {
-            MainView()
+            NavigationStack{
+                LoadingScreenView()
+            }
         }
     }
 }

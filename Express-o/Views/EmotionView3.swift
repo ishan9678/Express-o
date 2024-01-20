@@ -14,7 +14,7 @@ struct EmotionView3: View {
     var body: some View {
         VStack{
             // Header
-            HeaderView(title: "Emotion-Color Wheel", subTitle: "", alignLeft: false, height: 200, subMessage: false, subMessageWidth: 233, subMessageText: "What are you feeling?   ")
+            HeaderView(title: "Emotion-Color Wheel", titleSize: 35, subTitle: "", alignLeft: false, height: 200, subMessage: false, subMessageWidth: 233, subMessageText: "What are you feeling?   ")
                 .frame(maxWidth: .infinity, maxHeight: 130, alignment: .topLeading)
                 .background(Color.white)
             

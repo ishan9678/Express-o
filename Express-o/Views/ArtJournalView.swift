@@ -18,7 +18,7 @@ struct ArtJournalView: View {
         NavigationView{
             VStack() {
                 // Header
-                HeaderView(title: "Art Journal", subTitle: "", alignLeft: true, height: 230,subMessage: true, subMessageWidth: 233 ,subMessageText: "Your Creations")
+                HeaderView(title: "Art Journal", titleSize: 35, subTitle: "", alignLeft: true, height: 230,subMessage: true, subMessageWidth: 233 ,subMessageText: "Your Creations")
                     .frame(maxWidth: .infinity, maxHeight: 130, alignment: .topLeading)
                     .background(Color.white)
                     .padding(.bottom,40)
@@ -42,6 +42,7 @@ struct ArtJournalView: View {
             .edgesIgnoringSafeArea(.bottom)
         }
         .navigationBarHidden(true)
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 

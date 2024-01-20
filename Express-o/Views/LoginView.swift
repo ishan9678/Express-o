@@ -15,7 +15,7 @@ struct LoginView: View {
         NavigationView{
             VStack{
                 //Header
-                HeaderView(title: "Express-o", subTitle: "Welcome Back", alignLeft: false, height: 210,subMessage: false, subMessageWidth: 0, subMessageText: "")
+                HeaderView(title: "Express-o", titleSize: 35, subTitle: "Welcome Back", alignLeft: false, height: 210,subMessage: false, subMessageWidth: 0, subMessageText: "")
                 
                 //Image
                 VStack{
@@ -71,6 +71,7 @@ struct LoginView: View {
             }
         }
         .navigationBarHidden(true)
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 

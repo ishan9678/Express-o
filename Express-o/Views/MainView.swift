@@ -12,12 +12,7 @@ struct MainView: View {
     @StateObject var ViewModel = MainViewModel()
     
     var body: some View {
-        if ViewModel.isSignedIn, !ViewModel.currentUserId.isEmpty {
-            //Signed In
-            HomeView()
-        } else{
-            LoginView()
-        }
+        LoadingScreenView()
     }
 }
 

@@ -10,7 +10,7 @@ struct EmotionView1: View {
         NavigationView {
             VStack {
                 // Header
-                HeaderView(title: "Emotion-Color Wheel", subTitle: "", alignLeft: false, height: 200, subMessage: false, subMessageWidth: 233, subMessageText: "What are you feeling?   ")
+                HeaderView(title: "Emotion-Color Wheel", titleSize: 35, subTitle: "", alignLeft: false, height: 200, subMessage: false, subMessageWidth: 233, subMessageText: "What are you feeling?   ")
                     .frame(maxWidth: .infinity, maxHeight: 130, alignment: .topLeading)
                     .background(Color.white)
 
@@ -58,9 +58,9 @@ struct EmotionView1: View {
                 BottomNavBarView()
             }
             .edgesIgnoringSafeArea(.bottom)
-            .navigationBarHidden(true)
         }
         .navigationBarHidden(true)
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 
     private func toggleEmotion(_ emotion: String) {
