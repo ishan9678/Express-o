@@ -20,13 +20,12 @@ struct MandalaView: View {
                     .frame(maxWidth: .infinity, maxHeight: 130, alignment: .topLeading)
                     .background(Color.white)
 
+               
+                
                 Spacer()
                 // Mandala
                
-                Image("Mandala_Art")
-                  
                 
-
                 BottomNavBarView()
             }
             .edgesIgnoringSafeArea(.bottom)            
@@ -35,7 +34,6 @@ struct MandalaView: View {
         .navigationViewStyle(StackNavigationViewStyle())
     }
 }
-
 
 
 

@@ -18,6 +18,9 @@
 		7F99629D2B4EA571007CC6B5 /* OnboardingView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F99629C2B4EA571007CC6B5 /* OnboardingView2.swift */; };
 		7F99629F2B4EA6D5007CC6B5 /* OnboardingView3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F99629E2B4EA6D5007CC6B5 /* OnboardingView3.swift */; };
 		7F9BF8572B5B952000B5C623 /* DrawingCavasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9BF8562B5B952000B5C623 /* DrawingCavasViewController.swift */; };
+		7F9BF85A2B5B9B2D00B5C623 /* DrawingModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7F9BF8582B5B9B2D00B5C623 /* DrawingModel.xcdatamodeld */; };
+		7F9BF85C2B5B9C5C00B5C623 /* SketchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9BF85B2B5B9C5C00B5C623 /* SketchView.swift */; };
+		7F9BF85E2B5BBC3500B5C623 /* testView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9BF85D2B5BBC3500B5C623 /* testView.swift */; };
 		7FA085BD2B44154800580667 /* EmotionView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA085BC2B44154800580667 /* EmotionView1.swift */; };
 		7FA085BF2B441DFB00580667 /* EmotionView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA085BE2B441DFB00580667 /* EmotionView2.swift */; };
 		7FA085C12B44228300580667 /* EmotionView3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA085C02B44228300580667 /* EmotionView3.swift */; };
@@ -74,6 +77,9 @@
 		7F99629C2B4EA571007CC6B5 /* OnboardingView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView2.swift; sourceTree = "<group>"; };
 		7F99629E2B4EA6D5007CC6B5 /* OnboardingView3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView3.swift; sourceTree = "<group>"; };
 		7F9BF8562B5B952000B5C623 /* DrawingCavasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingCavasViewController.swift; sourceTree = "<group>"; };
+		7F9BF8592B5B9B2D00B5C623 /* DrawingModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DrawingModel.xcdatamodel; sourceTree = "<group>"; };
+		7F9BF85B2B5B9C5C00B5C623 /* SketchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SketchView.swift; sourceTree = "<group>"; };
+		7F9BF85D2B5BBC3500B5C623 /* testView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testView.swift; sourceTree = "<group>"; };
 		7FA085BC2B44154800580667 /* EmotionView1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionView1.swift; sourceTree = "<group>"; };
 		7FA085BE2B441DFB00580667 /* EmotionView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionView2.swift; sourceTree = "<group>"; };
 		7FA085C02B44228300580667 /* EmotionView3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionView3.swift; sourceTree = "<group>"; };
@@ -205,6 +211,8 @@
 				7F9962982B4EA442007CC6B5 /* OnboardNavitgationView.swift */,
 				7F99629E2B4EA6D5007CC6B5 /* OnboardingView3.swift */,
 				7F45C46C2B5994E1000321CC /* MandalaGeneration.swift */,
+				7F9BF85B2B5B9C5C00B5C623 /* SketchView.swift */,
+				7F9BF85D2B5BBC3500B5C623 /* testView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -232,6 +240,7 @@
 				7FCAD3892B40A56D0079B996 /* Post.swift */,
 				7FDF23E02B4483F80001B2C6 /* Message.swift */,
 				7FDF23E82B45209D0001B2C6 /* Pins.swift */,
+				7F9BF8582B5B9B2D00B5C623 /* DrawingModel.xcdatamodeld */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -357,16 +366,19 @@
 				7FD825462B4377BF00232DB5 /* GratTreeView.swift in Sources */,
 				7FD8253A2B43068400232DB5 /* ArtJournalPost.swift in Sources */,
 				7F99629F2B4EA6D5007CC6B5 /* OnboardingView3.swift in Sources */,
+				7F9BF85C2B5B9C5C00B5C623 /* SketchView.swift in Sources */,
 				7FC78BD32B3EF0630035C282 /* Hexcode.swift in Sources */,
 				7FC78BD92B3F2DC40035C282 /* ButtonView.swift in Sources */,
 				7FC78B9E2B3DA6330035C282 /* MainView.swift in Sources */,
 				7FDF23EB2B4521970001B2C6 /* PinsView.swift in Sources */,
 				7FC78BC72B3EE7DE0035C282 /* ArtJournalViewModel.swift in Sources */,
+				7F9BF85E2B5BBC3500B5C623 /* testView.swift in Sources */,
 				7FC78BC92B3EE7F70035C282 /* ProfileViewModel.swift in Sources */,
 				7FCAD3922B40C9BE0079B996 /* bottomNavBarView.swift in Sources */,
 				7F64481A2B49E1CF005341E5 /* ColorableGridView.swift in Sources */,
 				7FC78BCD2B3EE8300035C282 /* MainViewModel.swift in Sources */,
 				7FA085BF2B441DFB00580667 /* EmotionView2.swift in Sources */,
+				7F9BF85A2B5B9B2D00B5C623 /* DrawingModel.xcdatamodeld in Sources */,
 				7FC78BC12B3ED5920035C282 /* User.swift in Sources */,
 				7FC78BCB2B3EE8190035C282 /* LoginViewModel.swift in Sources */,
 				7FA085BD2B44154800580667 /* EmotionView1.swift in Sources */,
@@ -629,6 +641,19 @@
 			productName = FirebaseFirestoreSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		7F9BF8582B5B9B2D00B5C623 /* DrawingModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7F9BF8592B5B9B2D00B5C623 /* DrawingModel.xcdatamodel */,
+			);
+			currentVersion = 7F9BF8592B5B9B2D00B5C623 /* DrawingModel.xcdatamodel */;
+			path = DrawingModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 7FC78B902B3DA6330035C282 /* Project object */;
 }

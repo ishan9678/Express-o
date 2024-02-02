@@ -24,11 +24,11 @@ struct ArtTherapyView: View {
                         label: {
                             ArtTherapyPostView(imageName: "Mandala", title: "Mandala Art")
                         })
-                    NavigationLink(
-                        destination: SketchingView(),
-                        label: {
-                            ArtTherapyPostView(imageName: "sketching", title: "Sketching")
-                        })
+//                    NavigationLink(
+//                        destination: SketchingView(),
+//                        label: {
+//                            ArtTherapyPostView(imageName: "sketching", title: "Sketching")
+//                        })
 //                                        NavigationLink(
 //                        destination: EmotionView1(),
 //                        label: {
