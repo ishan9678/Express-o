@@ -26,6 +26,13 @@ struct LoginView: View {
                         .padding(.top, -100)
                 }
                 
+                NavigationLink(
+                                    destination: TabViewHomeView(),
+                                    isActive: $ViewModel.isLoggedIn,
+                                    label: { EmptyView() }
+                                )
+                                .hidden()
+                
                 //Login Form
                 Form{
                     

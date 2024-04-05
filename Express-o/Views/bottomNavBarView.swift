@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-let icons = ["home", "art_therapy", "journal", "nova", "profile"]
+let icons = ["home", "sketching", "journal", "mandala", "profile"]
 
 struct BottomNavBarView: View {
     var body: some View {
@@ -31,17 +31,17 @@ struct BottomNavBarView: View {
     private func destinationView(for iconName: String) -> some View {
             switch iconName {
             case "home":
-                print("Icon tapped")
                 return AnyView(HomeView())
-            case "art_therapy":
-                return AnyView(ArtTherapyView())
+            case "sketching":
+              
+                return AnyView(SketchingView())
                 
             case "journal":
                 let examplePosts = ArtJournalPost.examplePosts
                 return AnyView(ArtJournalView(posts: examplePosts))
                 
-            case "nova":
-                return AnyView(NovaConnectingView())
+            case "mandala":
+                return AnyView(MandalaView())
                 
             case "profile":
                 let examplePins = Pins.examplePins

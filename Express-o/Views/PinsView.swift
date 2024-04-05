@@ -16,13 +16,13 @@ struct PinsView: View {
             Image(post.imageName)
                 .resizable()
                 .scaledToFill()
-                .frame(width: 168, height: 185)
+                .frame(width: 350, height: 350)
                 .clipShape(RoundedRectangle(cornerRadius: 20))
 
             Text(post.title)
                 .foregroundColor(Color(hex: "17335F"))
                 .bold()
-                .font(.system(size: 16))
+                .font(.system(size: 20))
         }
     }
 }
@@ -35,3 +35,4 @@ struct PinsView_Previews: PreviewProvider {
     }
 }
 #endif
+

@@ -150,7 +150,7 @@ struct ProfileView: View {
                 
                 Spacer()
                 
-                BottomNavBarView()
+                //BottomNavBarView()
             }
             .edgesIgnoringSafeArea(.all)
         }

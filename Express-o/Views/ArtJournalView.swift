@@ -37,7 +37,7 @@ struct ArtJournalView: View {
                 
                 Spacer()
                 
-                BottomNavBarView()
+                //BottomNavBarView()
             }
             .edgesIgnoringSafeArea(.bottom)
         }

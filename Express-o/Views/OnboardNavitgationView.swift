@@ -31,7 +31,7 @@ struct OnboardNavigationView: View {
             HStack {
                 
                 NavigationLink("Skip") {
-                    HomeView()
+                    TabViewHomeView()
                 }
                 .font(.system(size: 24))
                 .foregroundColor(.white)

@@ -11,17 +11,34 @@ struct ArtJournalPostView: View {
     let post: ArtJournalPost
 
     var body: some View {
-        VStack {
-            Image(post.imageName)
-                .resizable()
-                .scaledToFill()
-                .frame(width: 168, height: 185)
-                .clipShape(RoundedRectangle(cornerRadius: 20))
+        if post.imageName == "add_new" {
+            NavigationLink(destination: ArtJournalView1()) {
+                VStack {
+                    Image(post.imageName)
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: 350, height: 350)
+                        .clipShape(RoundedRectangle(cornerRadius: 20))
 
-            Text(post.title)
-                .foregroundColor(Color(hex: "17335F"))
-                .bold()
-                .font(.system(size: 16))
+                    Text(post.title)
+                        .foregroundColor(Color(hex: "17335F"))
+                        .bold()
+                        .font(.system(size: 20))
+                }
+            }
+        } else {
+            VStack {
+                Image(post.imageName)
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: 350, height: 350)
+                    .clipShape(RoundedRectangle(cornerRadius: 20))
+
+                Text(post.title)
+                    .foregroundColor(Color(hex: "17335F"))
+                    .bold()
+                    .font(.system(size: 20))
+            }
         }
     }
 }
@@ -34,3 +51,4 @@ struct ArtJournalPostView_Previews: PreviewProvider {
     }
 }
 #endif
+

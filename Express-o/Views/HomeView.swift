@@ -44,7 +44,7 @@ struct HomeView: View {
                     }
                 
                 // Bottom navbar
-               BottomNavBarView()
+               //BottomNavBarView()
                         .navigationBarTitle("", displayMode: .inline)
                         .navigationBarHidden(true)
                         .toolbar(.hidden)

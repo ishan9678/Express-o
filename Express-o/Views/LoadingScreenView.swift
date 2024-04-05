@@ -38,7 +38,7 @@ struct LoadingScreenView: View {
                 
                 
                 
-                NavigationLink(destination: OnboardingView1(), isActive: $navigateToOnboardingView) {
+                NavigationLink(destination: CheckingViews(), isActive: $navigateToOnboardingView) {
                     EmptyView()
                 }
                 .hidden()
@@ -47,7 +47,7 @@ struct LoadingScreenView: View {
             .background(Color(hex: "FEC7C0"))
             .onAppear {
                 // Simulate loading for 5 seconds
-                Timer.scheduledTimer(withTimeInterval: 5, repeats: false) { _ in
+                Timer.scheduledTimer(withTimeInterval: 2, repeats: false) { _ in
                     isLoading = false
                     navigateToOnboardingView = true
                 }
