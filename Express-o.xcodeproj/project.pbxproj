@@ -72,6 +72,7 @@
 		86AB2AEC2BAF3AE70059A45F /* BookFlip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AB2AEB2BAF3AE70059A45F /* BookFlip.swift */; };
 		86BDE55B2BA88A7800E19258 /* ViewRotate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BDE55A2BA88A7800E19258 /* ViewRotate.swift */; };
 		86BDE55D2BA890B900E19258 /* Journal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BDE55C2BA890B900E19258 /* Journal.swift */; };
+		86CF0A972BC6823E003E9C0D /* SlidingTabView in Frameworks */ = {isa = PBXBuildFile; productRef = 86CF0A962BC6823E003E9C0D /* SlidingTabView */; };
 		86D511C72BB02F5100954FA1 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D511C62BB02F5100954FA1 /* Card.swift */; };
 		86D511C92BB1A6CD00954FA1 /* BookTemplates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D511C82BB1A6CD00954FA1 /* BookTemplates.swift */; };
 		86D511CB2BB1A75200954FA1 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D511CA2BB1A75200954FA1 /* Book.swift */; };
@@ -162,6 +163,7 @@
 			files = (
 				7FC78BAB2B3DACAD0035C282 /* FirebaseAuth in Frameworks */,
 				7FC78BAD2B3DACAD0035C282 /* FirebaseFirestore in Frameworks */,
+				86CF0A972BC6823E003E9C0D /* SlidingTabView in Frameworks */,
 				7F45C46B2B599498000321CC /* Replicate in Frameworks */,
 				7F3F52CC2B85D20900776BB0 /* GoogleGenerativeAI in Frameworks */,
 				842AF1742B94D03000E5C714 /* FirebaseStorage in Frameworks */,
@@ -344,6 +346,7 @@
 				7F45C46A2B599498000321CC /* Replicate */,
 				7F3F52CB2B85D20900776BB0 /* GoogleGenerativeAI */,
 				842AF1732B94D03000E5C714 /* FirebaseStorage */,
+				86CF0A962BC6823E003E9C0D /* SlidingTabView */,
 			);
 			productName = "Express-o";
 			productReference = 7FC78B982B3DA6330035C282 /* Express-o.app */;
@@ -377,6 +380,7 @@
 				7FC78BA92B3DACAD0035C282 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				7F45C4672B5991D8000321CC /* XCRemoteSwiftPackageReference "replicate-swift" */,
 				7F3F52CA2B85D20900776BB0 /* XCRemoteSwiftPackageReference "generative-ai-swift" */,
+				86CF0A952BC6823E003E9C0D /* XCRemoteSwiftPackageReference "SlidingTabView" */,
 			);
 			productRefGroup = 7FC78B992B3DA6330035C282 /* Products */;
 			projectDirPath = "";
@@ -701,6 +705,14 @@
 				minimumVersion = 10.0.0;
 			};
 		};
+		86CF0A952BC6823E003E9C0D /* XCRemoteSwiftPackageReference "SlidingTabView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/QuynhNguyen/SlidingTabView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.2;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -738,6 +750,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 7FC78BA92B3DACAD0035C282 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseStorage;
+		};
+		86CF0A962BC6823E003E9C0D /* SlidingTabView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 86CF0A952BC6823E003E9C0D /* XCRemoteSwiftPackageReference "SlidingTabView" */;
+			productName = SlidingTabView;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

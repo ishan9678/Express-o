@@ -3,6 +3,7 @@ import FirebaseStorage
 import PencilKit
 import FirebaseFirestore
 import FirebaseAuth
+import SlidingTabView
 
 struct MandalaView: View {
     let mandalaPosts: [MandalaPost] = MandalaPost.examplePosts
@@ -12,6 +13,7 @@ struct MandalaView: View {
     @State private var showGeneratedMandalas: Bool = false
     @State private var generatedMandalas: [GeneratedMandalaPost] = []
 //    @State private var hasFetchedGeneratedMandalas = false
+    @State private var tabIndex = 0
 
 
     
@@ -21,6 +23,8 @@ struct MandalaView: View {
                 HeaderView(title: "Mandala Art", titleSize: 35, subTitle: "", alignLeft: true, height: 230, subMessage: true, subMessageWidth: 233, subMessageText: "Your Mandalas")
                     .frame(maxWidth: .infinity, maxHeight: 130, alignment: .topLeading)
                     .background(Color.white)
+                
+//                SlidingTabView(selection: $tabIndex, tabs: ["Templates","Generated"])
                 
                 
                 HStack {
