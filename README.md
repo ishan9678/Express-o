@@ -8,19 +8,23 @@ Express-O is a feature-rich iPad app designed to enhance your creativity and emo
 
 ### Home Screen
 ![image](https://github.com/ishan9678/Express-o/assets/96326613/7ed63350-2eeb-4883-b38d-e549d5b03855)
+
 The home screen provides a comprehensive overview of all the features available in Express-O.
 
 ### Sketching
 ![image](https://github.com/ishan9678/Express-o/assets/96326613/7c70b48f-8661-48fd-9914-a3306f3be51b)
 ![image](https://github.com/ishan9678/Express-o/assets/96326613/09c56c01-d318-4be5-ae7a-3582317e0535)
+
 Unleash your creativity with the sketching feature. Use a variety of brushes and colors to create detailed drawings and sketches using the Apple Pencil.
 
 ### Mandala Art
 ![image](https://github.com/ishan9678/Express-o/assets/96326613/36fb73d9-c389-440d-b050-1c23156c6e5a)
+
 Express-O makes mandala art creation simple and enjoyable. Draw intricate designs manually or let your creativity flow with symmetrical patterns.
 
 ### Mandala Generation
 ![image](https://github.com/ishan9678/Express-o/assets/96326613/ef6dff55-7865-4a5e-b987-a852c16cba54)
+
 Generate stunning mandala designs with the help of AI. Customize and color these AI-generated mandalas to suit your artistic vision.
 
 ### Art Journal
@@ -31,6 +35,7 @@ The Art Journal feature offers a unique multimedia journaling experience. Combin
 
 ### Emotion Insights
 ![image](https://github.com/ishan9678/Express-o/assets/96326613/e23b749b-c2ff-4ede-a959-3e8be337f730)
+
 Emotion Insights analyzes your sketches, mandalas, and journal entries to detect and interpret the emotions conveyed through your art. Gain a deeper understanding of your emotional expression and well-being.
 
 ## Getting Started
@@ -103,8 +108,6 @@ This project is licensed under the MIT License - see the LICENSE.md file for det
 
 ## Contact
 
-If you have any questions, feedback, or suggestions, please open an issue or reach out to us at support@expressoapp.com.
+If you have any questions, feedback, or suggestions, please open an issue or reach out to us at is9678@srmist.edu.in
 
 ---
-
-Feel free to adjust the image paths and contact information as necessary.
